@@ -38,9 +38,10 @@ Partial Class Form1
         '
         'Message
         '
-        Me.Message.Location = New System.Drawing.Point(32, 336)
+        Me.Message.Location = New System.Drawing.Point(42, 336)
+        Me.Message.Multiline = True
         Me.Message.Name = "Message"
-        Me.Message.Size = New System.Drawing.Size(270, 20)
+        Me.Message.Size = New System.Drawing.Size(318, 118)
         Me.Message.TabIndex = 0
         '
         'Toperson
@@ -84,7 +85,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(106, 307)
+        Me.Label3.Location = New System.Drawing.Point(142, 310)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(100, 13)
         Me.Label3.TabIndex = 5
@@ -129,7 +130,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(356, 449)
+        Me.Button1.Location = New System.Drawing.Point(42, 470)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(147, 23)
         Me.Button1.TabIndex = 10
@@ -141,7 +142,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(515, 484)
+        Me.ClientSize = New System.Drawing.Size(515, 505)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Password)
@@ -153,6 +154,7 @@ Partial Class Form1
         Me.Controls.Add(Me.From)
         Me.Controls.Add(Me.Toperson)
         Me.Controls.Add(Me.Message)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Form1"
         Me.Text = "EMAIL"
         Me.ResumeLayout(False)
